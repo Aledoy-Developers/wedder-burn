@@ -66,7 +66,7 @@
               <a class="nav-link" href="faq.html">FAQ</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="bookings.html">Bookings</a>
+              <a class="nav-link" href="booking.php">Bookings</a>
             </li>
             <li class="nav-item ml-3">
               <a href="contact.php" class="btn btn-outline-primary btn-style mr-2">Contact Us</a>
@@ -118,14 +118,24 @@
                   <div class="col-lg-8">
                       <h3 class="title-big">Book us</h3>
                       <p class="mb-4">Required fields are marked *</p>
-                      <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="text-right">
+                      <?php
+                      if($error)
+                      { ?>
+                         <div class="alert alert-danger"><?php echo $error; ?></div>
+                        <?php } ?>
+                      <?php
+                      if($correct)
+                      { ?>
+                         <div class="alert alert-success"><?php echo $correct; ?></div>
+                        <?php } ?>
+                      <form action="proc-booking.php" method="post" class="text-right">
                           <div class="form-grid">
-                              <input type="text" name="w3lName" id="w3lName" placeholder="Name*" required="">
-                              <input type="email" name="w3lSender" id="w3lSender" placeholder="Email*" required="">
-                              <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Phone number*"
+                              <input type="text" name="name" id="w3lName" placeholder="Name*" required="">
+                              <input type="email" name="email" id="w3lSender" placeholder="Email*" required="">
+                              <input type="text" name="phone" id="w3lPhone" placeholder="Phone number*"
                                   required="">
-                              <input type="text" name="w3lSubject" id="w3lSubject" placeholder="Address">
-                              <select name="" id="">
+                              <input type="text" name="address" id="w3lSubject" placeholder="Address">
+                              <select name="service_type" id="">
                                 <option selected disabled value="">Service type</option>
                                 <option value="Electrical Panels(Breaker Box)">Electrical Panels(Breaker Box)</option>
                                 <option value="Knob & Tube Whole Home Wiring">Knob & Tube Whole Home Wiring</option>
@@ -135,12 +145,12 @@
                                 <option value="Indoor / Outdoor lighting Installation">Indoor / Outdoor lighting Installation</option>
                                 <option value="Commercial Electrical service">Commercial Electrical service</option>
                               </select>
-                              <input type="text" name="w3lSubject" id="w3lSubject" placeholder="City">
+                              <input type="text" name="city" id="w3lSubject" placeholder="City">
                             </div>
-                          <textarea name="w3lMessage" id="w3lMessage" placeholder="Other information"></textarea>
-                          <a href="thanks.html">
+                          <textarea name="message" id="w3lMessage" placeholder="Other information"></textarea>
+                          
                             <button type="submit" class="btn btn-primary btn-style mt-3">Submit</button>
-                          </a>
+                          
                       </form>
                   </div>
                   <div class="col-lg-4 move">

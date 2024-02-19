@@ -66,7 +66,7 @@
               <a class="nav-link" href="faq.html">FAQ</a>
             </li>
             <li class="nav-item @@bookings__active">
-              <a class="nav-link" href="bookings.html">Bookings</a>
+              <a class="nav-link" href="booking.php">Bookings</a>
             </li>
             <li class="nav-item ml-3">
               <a href="contact.php" class="btn btn-outline-primary btn-style mr-2">Contact Us</a>
@@ -119,23 +119,32 @@
                      <div class="col-lg-8">
                          <h3 class="title-big">Contact us</h3>
                          <p class="mb-4">Your email address will not be published. Required fields are marked *</p>
-                         <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="text-right">
+                      <?php
+                      if($error)
+                      { ?>
+                         <div class="alert alert-danger"><?php echo $error; ?></div>
+                        <?php } ?>
+                      <?php
+                      if($correct)
+                      { ?>
+                         <div class="alert alert-success"><?php echo $correct; ?></div>
+                        <?php } ?>
+                         <form action="proc-contact.php" method="post" class="text-right">
                              <div class="form-grid">
-                                 <input type="text" name="w3lName" id="w3lName" placeholder="Name*" required="">
-                                 <input type="email" name="w3lSender" id="w3lSender" placeholder="Email*" required="">
-                                 <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Phone number*"
+                                 <input type="text" name="name" id="w3lName" placeholder="Name*" required="">
+                                 <input type="email" name="email" id="w3lSender" placeholder="Email*" required="">
+                                 <input type="text" name="phone" id="w3lPhone" placeholder="Phone number*"
                                      required="">
-                                 <input type="text" name="w3lSubject" id="w3lSubject" placeholder="Subject">
+                                 <input type="text" name="subject" id="w3lSubject" placeholder="Subject">
                              </div>
-                             <textarea name="w3lMessage" id="w3lMessage" placeholder="Message"></textarea>
+                             <textarea name="message" id="w3lMessage" placeholder="Message"></textarea>
                              <button type="submit" class="btn btn-primary btn-style mt-3">Submit</button>
                          </form>
                      </div>
                      <div class="col-lg-4 cont-details">
                          <address>
                             <p>For more info or inquiry about our services, please feel free to get in touch with us.</p>
-                             <h5 class="mt-md-5 mt-4">New York Office</h5>
-                             <p><span class="fa fa-map-marker"></span>CW Electrical Services Inc 3424 Babcock Blvd Pittsburgh, PA 15237 </p>
+                             <br><br>
                              <p> <a href="tel:(412) 499 0182"><span class="fa fa-phone"></span> (412) 499 0182</a></p>
                              <p> <a href="mailto:Klem_45@yahoo.com" class="mail"><span class="fa fa-envelope-open-o"></span>
                               Klem_45@yahoo.com</a></p>
@@ -175,7 +184,8 @@
               <h6 class="footer-title-29">Contact Us</h6>
               <ul>
                 <li>
-                  <p><span class="fa fa-map-marker"></span> CW Electrical Services Inc 3424 Babcock Blvd Pittsburgh, PA 15237</p>
+                  <!-- <span class="fa fa-map-marker"></span> CW Electrical
+                    Services Inc 3424 Babcock Blvd Pittsburgh, PA 15237 -->
                 </li>
                 <li><a href="tel:(412) 499 0182"><span class="fa fa-phone"></span> (412) 499 0182</a></li>
                 <li><a href="mailto:Klem_45@yahoo.com" class="mail"><span class="fa fa-envelope-open-o"></span>
