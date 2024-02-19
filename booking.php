@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Wedder Burn</title>
+  <title>Wedderburn</title>
 
   <!-- Google fonts -->
   <link href="//fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
   <section class="w3l-header-4">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"><img src="assets/images/wedderburn.png" alt="wedder burn" class="img-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/wedderburn.png" alt="Wedderburn" class="img-fluid">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -190,9 +190,9 @@
                 >
               </li>
               <li>
-                <a href="mailto: info@wedderburnelectrics.com" class="mail"
+                <a href="mailto: info@wedderburnelectric.com" class="mail"
                   ><span class="fa fa-envelope-open-o"></span>
-                  info@wedderburnelectrics.com</a
+                  info@wedderburnelectric.com</a
                 >
               </li>
             </ul>
@@ -256,7 +256,7 @@
         </div>
         <div class="row bottom-copies">
           <p class="copy-footer-29 col-lg-8">
-            © 2024 Wedder Burn Electrics. All rights reserved.
+            © 2024 Wedderburn Electric. All rights reserved.
           </p>
           <ul class="list-btm-29 col-lg-4">
             <li><a href="#link">Privacy policy</a></li>
