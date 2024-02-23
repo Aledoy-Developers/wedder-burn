@@ -173,12 +173,7 @@
           <div class="col-lg-4 col-md-6 footer-list-29 footer-1 mt-md-4">
             <h6 class="footer-title-29">Contact Us</h6>
             <ul>
-              <li>
-                <p>
-                  <span class="fa fa-map-marker"></span> CW Electrical
-                  Services Inc 3424 Babcock Blvd Pittsburgh, PA 15237
-                </p>
-              </li>
+              
               <li>
                 <a href="tel:(412) 499 0182"
                   ><span class="fa fa-phone"></span> (412) 499 0182</a
